@@ -1,7 +1,7 @@
 # Neural-Netwrok-implementation-from-scratch
 Implementation of the multi layer neural network from scratch (in python)
 
-## How to use it 
+## How to Train the model
 
 ##### Step 1: Import the dl_toolkit
 ```python
@@ -48,12 +48,11 @@ from sklearn.datasets import fetch_openml
 mnist = fetch_openml('mnist_784')
 
 x, y = mnist.data, mnist.target
-x, y = x.astype(np.int32), y.astype(np.int32)   # converting x, y to int32 type
+x, y = x.astype(np.int32).to_numpy(), y.astype(np.int32).to_numpy()   # converting x, y to int32 numpy array
 
 # splitting the data in train and test (Stratified sampling)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.20, stratify = y, random_state = 42)
-
 
 ```
 
