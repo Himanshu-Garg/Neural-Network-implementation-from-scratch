@@ -1,4 +1,4 @@
-# Neural-Netwrok-implementation-from-scratch
+# Neural-Network-implementation-from-scratch
 Implementation of the multi layer neural network from scratch (in python)
 
 ## How to Train the model
